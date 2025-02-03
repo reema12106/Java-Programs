@@ -1,18 +1,14 @@
 import java.util.*;
-class PrimeMagic
-{
+class PrimeMagic {
     private int n;
-    public void get()
-    {
+    public void get() {
         Scanner obj = new Scanner(System.in);
         System.out.println("Enter a number:");
         n = obj.nextInt();
     }
-    public int prime(int a)
-    {
+    public int prime(int a) {
         int c = 0,i;
-        for(i = 1; i <= a; i++)
-        {
+        for(i = 1; i <= a; i++) {
             if(a%i == 0)
             c++;
         }
@@ -21,21 +17,17 @@ class PrimeMagic
         else
         return 0;
     }
-    public int sumdigit(int a)
-    {
+    public int sumdigit(int a) {
         int sum = 0,d,i;
-        for(i = a;i!=0;i=i/10)
-        {
+        for(i = a;i!=0;i=i/10) {
             d = i%10;
             sum = sum + d;
         }
         return sum;
     }
-    public int isMagic(int a)
-    {
+    public int isMagic(int a) {
         int p;
-        while(a>9)
-        {
+        while(a>9) {
             p = sumdigit(a);
             a = p;
         }
@@ -44,8 +36,7 @@ class PrimeMagic
         else
         return 0;
     }
-    public void display()
-    {
+    public void display() {
         int a,b;
         a = isMagic(n);
         b = prime(n);
@@ -55,8 +46,7 @@ class PrimeMagic
         System.out.println(n+" is not a Prime Magic Number");
 
     }
-    public static void main(String args[])
-    {
+    public static void main(String args[]) {
         PrimeMagic a = new PrimeMagic();
         a.get();
         a.display();
