@@ -1,0 +1,9 @@
+// {
+//     "java.debug.settings.onBuildFailureProceed": true
+// }
+{
+    "java.project.referencedLibraries": [
+        "C:/javafx-sdk-24/javafx-sdk-24.0.1/lib/*.jar"
+    ],
+    "java.debug.settings.onBuildFailureProceed": true
+}

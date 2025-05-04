@@ -1,0 +1,25 @@
+// {
+//   "version": "0.2.0",
+//   "configurations": [
+//       {
+//           "type": "java",
+//           "name": "Launch JavaFX Program",
+//           "request": "launch",
+//           "mainClass": "MyFirstFrameApp",
+//           "vmArgs": "--module-path C:/javafx-sdk-24/javafx-sdk-24.0.1/lib --add-modules javafx.controls"
+//       }
+//   ]
+// }
+{
+  "version": "0.2.0",
+  "configurations": [
+      {
+          "type": "java",
+          "name": "Launch Current JavaFX File",
+          "request": "launch",
+          "mainClass": "${fileBasenameNoExtension}",
+          "vmArgs": "--module-path C:/javafx-sdk-24/javafx-sdk-24.0.1/lib --add-modules javafx.controls,javafx.fxml"
+      }
+  ]
+}
+

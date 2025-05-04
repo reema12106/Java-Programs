@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build javafx project",
+            "type": "shell",
+            "command": "javac --module-path \"C:\\javafx-sdk-24\\javafx-sdk-24.0.1\\lib\" --add-modules javafx.controls *.java",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$javac"]
+        }
+    ]
+}
